@@ -1,52 +1,38 @@
-# pygame opdracht
-Startcode voor het programmeren van een breakout game in python met het pygame package.
+# python opgaven
+Deze Codespace is de ontwikkelomgeving (IDE) waarmee je Python opgaven uit Fundament kunt maken.
 
-De startcode is onderdeel van de praktische opdracht python programmeren voor het vak informatica op het Stanislascollege Westplantsoen.
+Je vindt de opgaven op: <br>
+[Fundament - Kernprogramma  D: Programmeren  Ontwikkelen met Python](https://fundament-online.nl/leeromgeving/hoofdstuk.php?id=10500)
 
-De aanbevolen ontwikkelomgeving is GitHub Codespaces, maar de code zou moeten draaien in elke ontwikkelomgeving met pyhton en het pygame package.
+## Codespaces
+In deze Codespace kun je bestanden wijzigen (Engels: edit) en code uitvoeren (Engels: run). De bestanden staan op een virtuele server in de cloud, de code wordt op die server uitgevoerd. In je browser zie je de webversie van vscode (spreek uit als: vie-es-koot). Vscode is een veelgebruikte editor, maar het is meer dan een editor. De virtuele server vormt samen met vscode een online IDE (Integrated Development Environment). Het woord "online" betekent dat je er via je browser bij kunt en dat je niks hoeft te installeren.
 
-## Edit code
-Edit `main.py`. 
+[!vscode](vscode.png)
+- A) Activity Bar, klik op het bovenste icoon (Explorer) om je mappen en bestanden te zien, klik op het derde icoon (Source Control) van boven om te werken met GitHub
+- C) Editor Groups, hier verschijnen de bestanden die je opent.
+- D) Panel, hierin zit onder andere de Terminal. De terminal geeft toegang tot de virtuele computer, je kunt er commando's intypen.
 
-## Start de game
+Meer informatie over
+- de editor vscode:<br>
+[https://code.visualstudio.com/docs/getstarted/userinterface](https://code.visualstudio.com/docs/getstarted/userinterface)
+- werken met GitHub en Codespaces:<br>
+[https://informatica.emmauscollege.nl/tools/github-codespaces/](https://informatica.emmauscollege.nl/tools/github-codespaces/)
+
+## Je eerste programma uitvoeren
 Type in de terminal het commando<br>
-`python main.py`
+`python hallo.py`
 
-Stop de game door `[CRTL]+[C]` in te drukken.
+## Je eerste programma aanpassen
+- Dubbelklik op het bestand `hallo.py`. Het bestand wordt geopend in de editor.]
+- Pas de tekst `Hallo` aan in `Hoi`
+- Start het programma met `python hallo.py`
 
-## Open GUI
-De GUI opent automatisch in Simple Browser nadat de game is gestart.
+## Een nieuw programma maken
+- Maak een nieuwe bestand, geef het een naam zonder spaties die eindigt op `.py`
+- Type je code in het nieuwe bestand
+- Start het programma met `python jouw_programma.py`
 
-Als de GUI niet automatisch opent:<br>
-Klik op ports, klik op wereldbol bij port 6080 (GUI)
+## Een programma stoppen voor het klaar is
+Klik op de terminal en druk daarna op de toetsen<br>
+`[CRTL]+[C]`
 
-Als je bij ports niets ziet staan:<br>
-Sommige scholen blokkeren verkeer naar https://euw.rel.tunnels.api.visualstudio.com in hun firewall. Een work around is om de link naar de juiste poort op de server zelf te typen. Bij deze opdracht draait er een novnc-webserver op poort 6080, je doet dat dan als volgt:<br>
-- Knip de link van je Codespace boven in je browser naar een nieuw tabblad (de link lijkt op https://xxxxxx-xxxxxx-xxxxxx.github.dev )
-- Verander de link in https://xxxxxx-xxxxxx-xxxxxx-6080.app.github.dev (dus voeg `-6080.app` toe)
-- Je ziet nu de GUI.
-
-Klik met je muis op de GUI om het toetsenbord aan je game te koppelen.
-
-## Stijl-richtlijnen voor het schrijven van python code
-
-- Code is written in English
-- Words within variable names are seperated by underscores. 
-  Constants are variables for which the value does not change,
-  convention is to use uppercase for naming constants.
-  ```
-  ball_x = 0        # variable, the value changes when the programm is running
-  BALL_HEIGHT = 16  # constant, the value does not change when the programm is running
-  ```
-- A tuple is an ordered datatype just like a list, but values of a tuple cannot change,
-  convention is to use tuples instead of lists where possible.
-  ```
-  draw_circle((x,y),color) has 2 parameters: the tuple (x,y) and color. 
-  draw_circle([x,y],color) does the same thing, but uses a list instead of a tuple
-  ``````
-- Long expressions can be divided into mutiple lines for readability when enclose with ()
-  ```
-  if x>2 and y<8 : # one line solution
-  if (x>2 and      # line 1 of 2
-      y<8)    :    # line 2 of 2
-  ```
